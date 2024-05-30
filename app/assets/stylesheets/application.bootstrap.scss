@@ -1,0 +1,21 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+@import "variables";
+@import "header";
+@import "section";
+@import "services";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: $primary_dark_grey;
+}
+
+.red-text{
+    color: red;
+}
