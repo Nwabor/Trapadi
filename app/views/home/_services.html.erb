@@ -5,14 +5,55 @@
     </div>
 
     <div class="primary-text">
-        <span class="graph">graphics</span>
-        <span class="product">product</span>
-        <span class="develop">development</span>
-        <span class="train">training</span>
-        <span class="market">marketing</span>
-        <span class="video">video editing</span>
+        <span class="graph">graphics
+            <div class="img-overlay">
+                <%= image_tag 'services_svgs/products/graphics.svg', id: 'graph', alt: 'Graph Image'%>
+            </div>
+            <div class="hover-text">
+                <h6>Branding, Logo, Prints, Book Illustrations, Ad design ...</h6>
+            </div>
+        </span>
+        <span class="product">product
+            <div class="img-overlay">
+                <%= image_tag 'services_svgs/products/app.svg', id: 'product', alt: 'Product Image'%>
+            </div>
+            <div class="hover-text">
+                <h6>UXUI, Mobile app, Web app, User research, Prototyping, Wireframing...</h6>
+            </div>
+        </span>
+        <span class="develop">development
+            <div class="img-overlay">
+                <%= image_tag 'services_svgs/products/develop.svg', id: 'develop', alt: 'Development Image' %>
+            </div>
+            <div class="hover-text">
+                <h6>Front end, Back end, Fullstack, Java, APIs, CSS, HTML...</h6>
+            </div>
+        </span>
+        <span class="train">training
+            <div class="img-overlay">
+                <%= image_tag 'services_svgs/products/train.svg', id: 'train', alt: 'Training Image' %>
+            </div>
+            <div class="hover-text">
+                <h6>UIUX, Graphics, Front End, Web Design, Back End...</h6>
+            </div>
+        </span>
+        <span class="market">marketing
+            <div class="img-overlay">
+            <%= image_tag 'services_svgs/products/market.svg', id: 'market', alt: 'Marketing Image' %>
+            </div>
+            <div class="hover-text">
+                <h6>SEO, Social media marketing, Optimization...</h6>
+            </div>
+        </span>
+        <span class="video">video editing
+            <div class="img-overlay">
+                <%= image_tag 'services_svgs/products/editing.svg', id: 'video', alt: 'Video Editing Image' %>
+            </div>
+            <div class="hover-text">
+                <h6>Video editing, Motion graphics, Explainer videos</h6>
+            </div>
+        </span>
     </div>
-
 </div>
 
 <div class="work-container">
@@ -45,7 +86,7 @@
         <div class="app">
             <%=image_tag("services_svgs/editing.svg", alt: "Video Editing", class: "size")%>
         </div>
-       
+
     </div>
 
 </div>

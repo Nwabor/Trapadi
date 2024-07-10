@@ -26,13 +26,15 @@
     line-height: 30px;
     text-transform: capitalize;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .secondary-text{
     padding-bottom: 10px;
 }
 
-.primary-text{
+.primary-text span{
+    display: block;
     font-size: 70px;
     font-weight: 800;
     line-height: 100px;
@@ -40,7 +42,6 @@
 }
 
 .graph{
-    display: block;
     color: #5B5B5B;
 }
 
@@ -50,23 +51,73 @@
 }
 
 .develop{
-    display: block;
     color: #7C7C7C;
 }
 
 .train{
-    display: block;
     color: #8E8E8E;
 }
 
 .market{
-    display: block;
     color: #B1B1B1;
 }
 
 .video{
-    display: block;
     color: #DBDBDB;
+}
+
+.primary-text .graph:hover {
+    color: #DF4036;
+}
+
+.primary-text .product:hover {
+    color: #00ADCD;
+}
+
+.primary-text .develop:hover {
+    color: #E5BF27;
+}
+
+.primary-text .train:hover {
+    color: #8548D5;
+}
+
+.primary-text .market:hover {
+    color: #FE24AC;
+}
+
+.primary-text .video:hover {
+    color: #1AB272;
+}
+
+.img-overlay, .hover-text {
+    position: absolute;
+    left: 60%;
+    top: 0; 
+    display: none;
+}
+
+.primary-text span:hover .img-overlay,
+.primary-text span:hover .hover-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+.hover-text {
+    margin-top: 350px;
+    margin-left: -200px;
+    background-color: #ffffff;
+    align-items: center;  
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.primary-text .hover-text h6{
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
 }
 
 .work-container{
